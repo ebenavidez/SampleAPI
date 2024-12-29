@@ -17,7 +17,6 @@ class RecipeResource extends JsonResource
             'total_time' => $this->total_time,
             'servings' => $this->servings,
             'categories' => CategoryResource::collection($this->whenLoaded('categories')),
-            'tags' => TagResource::collection($this->whenLoaded('tags')),
             'ingredients' => $this->whenLoaded('ingredients', function () {
                 return $this->ingredients->map(function ($ingredient) {
                     return [
