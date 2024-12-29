@@ -38,14 +38,6 @@ class Recipe extends Model
     }
 
     /**
-     * Relationship: Recipe belongs to many tags.
-     */
-    public function tags()
-    {
-        return $this->belongsToMany(Tag::class, 'recipe_tags')->withTimestamps();
-    }
-
-    /**
      * Relationship: Recipe has many media files.
      */
     public function media()
