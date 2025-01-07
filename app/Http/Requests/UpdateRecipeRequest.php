@@ -20,6 +20,7 @@ class UpdateRecipeRequest extends FormRequest
             'cook_time' => 'sometimes|required|integer|min:1',
             'total_time' => 'sometimes|required|integer|min:1',
             'servings' => 'sometimes|required|integer|min:1',
+            'shared_by' => 'required|string',
         ];
     }
 

@@ -20,6 +20,7 @@ class StoreRecipeRequest extends FormRequest
             'cook_time' => 'required|integer|min:1',
             'total_time' => 'required|integer|min:1',
             'servings' => 'required|integer|min:1',
+            'shared_by' => 'required|string',
         ];
     }
 
